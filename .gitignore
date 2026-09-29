@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+data/raw/
+data/processed/
+*.zip
+*.part*
+report/report.html
+.streamlit/secrets.toml
+~$*
+*.tmp
+Thumbs.db
+desktop.ini

@@ -1,0 +1,31 @@
+# PyTorch with CUDA (RTX 50-series needs CUDA 12.8+). Install first:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+torch>=2.9
+torchvision>=0.24
+
+# Data + numerical model
+numpy>=2.0
+pandas>=2.2
+scikit-learn>=1.5
+joblib>=1.4
+kagglehub>=0.3
+Pillow>=10.0
+
+# API
+fastapi>=0.115
+uvicorn>=0.30
+python-multipart>=0.0.9
+requests>=2.31
+
+# Dashboard
+streamlit>=1.45
+plotly>=5.20
+
+# Chatbot: Ollama (https://ollama.com) with  `ollama pull gemma2:9b`
+
+# Report tools (only needed to rebuild report/): Edge + MS Word must be installed
+matplotlib>=3.8
+websocket-client>=1.7
+pypdf>=4.0
+python-docx>=1.1
+pywin32>=306

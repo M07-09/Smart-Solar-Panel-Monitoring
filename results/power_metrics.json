@@ -1,0 +1,57 @@
+{
+  "model": "RandomForestRegressor",
+  "params": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": 18,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 10,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 150,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "train_rows": 98703,
+  "test_rows": 27653,
+  "test_from": "2020-06-11",
+  "train_seconds": 3.3,
+  "scores": {
+    "LinearRegression": {
+      "MAE": 24.105049748783618,
+      "RMSE": 54.69071393739058,
+      "R2": 0.9724188582028018
+    },
+    "RandomForest": {
+      "MAE": 17.188092560782824,
+      "RMSE": 53.71156271255102,
+      "R2": 0.9733976114825759
+    },
+    "RandomForest_daylight": {
+      "MAE": 37.038040511244006,
+      "RMSE": 79.23625259735131,
+      "R2": 0.9290044595142389
+    },
+    "LinearRegression_daylight": {
+      "MAE": 47.20514069860317,
+      "RMSE": 80.23680355142825,
+      "R2": 0.92720015539031
+    }
+  },
+  "feature_importance": {
+    "IRRADIATION": 0.9926,
+    "MODULE_TEMPERATURE": 0.0031,
+    "AMBIENT_TEMPERATURE": 0.0017,
+    "HOUR_SIN": 0.0016,
+    "HOUR_COS": 0.0007,
+    "PLANT": 0.0003
+  }
+}
